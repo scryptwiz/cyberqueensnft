@@ -12,11 +12,6 @@
   font-weight: normal;
 }
 @font-face {
-  font-family: 'DM Mono';
-  src: url(/public/assets/fonts/DM_Mono/DMMono-MediumItalic.ttf) format('truetype');
-  font-weight: medium;
-}
-@font-face {
   font-family: 'DM Sans';
   src: url(/public/assets/fonts/DM_Sans/DMSans-Regular.ttf) format('truetype');
   font-weight: normal;
@@ -53,12 +48,18 @@ code {
   background-size: cover;
   object-position: center;
 }
+.title {
+  font-family: 'DM Serif Display', serif;
+}
+.mono {
+  font-family: 'DM Mono', monospace;
+}
 .each_section {
   @apply w-full md:h-fit h-screen flex px-10 xl:px-0 
 }
 .contentmax_width{
   @apply lg:max-w-6xl mx-auto w-full
 }
-.title {
-  font-family: 'DM Serif Display', serif;
+.connect_wallet  {
+  @apply text-white font-light px-10 py-3 bg-gradient-to-r from-cyberPurple to-cyberPink
 }

@@ -14,7 +14,11 @@ import Navbar from "../components/Navbar";
                 accessToken: process.env.REACT_APP_CONTENTFUL_ACCESS_TOKEN
               });
               const herosection = await client.getEntries({ content_type: "heroSection" })
+              const aboutNFT = await client.getEntries({ content_type: "aboutSection" })
+              const aboutContent = await client.getEntries({ content_type: "aboutContent" })
               dispatch({type: "SET_HERO_SECTION", payload:herosection.items})
+              dispatch({type: "SET_ABOUTNFT_SECTION", payload:aboutNFT.items})
+              dispatch({type: "SET_ABOUTCONTENT_SECTION", payload:aboutContent.items})
         }
         getInfo()
     }, [dispatch])
