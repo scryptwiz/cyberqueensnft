@@ -57,9 +57,28 @@ code {
 .each_section {
   @apply w-full md:h-fit h-screen flex px-10 xl:px-0 
 }
+.trait_section {
+  @apply w-full md:h-fit h-screen flex pl-10 xl:px-0 
+}
 .contentmax_width{
   @apply lg:max-w-6xl mx-auto w-full
 }
 .connect_wallet  {
   @apply text-white font-light px-10 py-3 bg-gradient-to-r from-cyberPurple to-cyberPink
+}
+.pickgradient{
+  mask-image: linear-gradient(to top right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 100%);
+   -webkit-mask-image: linear-gradient(to top right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 100%);
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
