@@ -1,0 +1,14 @@
+{
+  "short_name": "Cyber Queens",
+  "name": "Welcome To Cyber Queens NFT",
+  "icons": [
+    {
+      "src": "/assets/logo/logo.png",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#000000"
+}

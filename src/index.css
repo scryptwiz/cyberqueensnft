@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: 'DM Mono';
+  src: url(/public/assets/fonts/DM_Mono/DMMono-Light.ttf) format('truetype');
+  font-weight: light;
+}
+@font-face {
+  font-family: 'DM Mono';
+  src: url(/public/assets/fonts/DM_Mono/DMMono-Regular.ttf) format('truetype');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'DM Mono';
+  src: url(/public/assets/fonts/DM_Mono/DMMono-MediumItalic.ttf) format('truetype');
+  font-weight: medium;
+}
+@font-face {
+  font-family: 'DM Sans';
+  src: url(/public/assets/fonts/DM_Sans/DMSans-Regular.ttf) format('truetype');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'DM Sans';
+  src: url(/public/assets/fonts/DM_Sans/DMSans-Medium.ttf) format('truetype');
+  font-weight: medium;
+}
+@font-face {
+  font-family: 'DM Sans';
+  src: url(/public/assets/fonts/DM_Sans/DMSans-Bold.ttf) format('truetype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'DM Serif Display';
+  src: url(/public/assets/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf) format('truetype');
+  font-weight: normal;
+}
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+}
+
+code {
+  font-family: 'DM Mono',monospace;
+}
+.hero_bg {
+  background-image: url('/public/assets/images/gradients.png');
+  background-position: center;
+  background-size: cover;
+  object-position: center;
+}
+.each_section {
+  @apply w-full md:h-fit h-screen flex px-10 xl:px-0 
+}
+.contentmax_width{
+  @apply lg:max-w-6xl mx-auto w-full
+}
+.title {
+  font-family: 'DM Serif Display', serif;
+}
