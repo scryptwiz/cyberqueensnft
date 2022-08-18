@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import AboutSection from "../components/AboutSection";
 import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
+import Traits from "../components/Traits";
 import TraitSection from "../components/TraitSection";
 
  const Mainpage = () => {
@@ -19,11 +20,13 @@ import TraitSection from "../components/TraitSection";
               const aboutContent = await client.getEntries({ content_type: "aboutContent" })
               const traitContent = await client.getEntries({ content_type: "traitContent"})
               const traitEval = await client.getEntries({ content_type: "traitEval"})
+              const traits = await client.getEntries({ content_type: "trait"})
               dispatch({type: "SET_HERO_SECTION", payload:herosection.items})
               dispatch({type: "SET_ABOUTNFT_SECTION", payload:aboutNFT.items})
               dispatch({type: "SET_ABOUTCONTENT_SECTION", payload:aboutContent.items})
               dispatch({type: "SET_TRAITCONTENT_SECTION", payload:traitContent.items})
               dispatch({type: "SET_TRAITEVAL_SECTION", payload:traitEval.items})
+              dispatch({type: "SET_TRAITS", payload:traits.items})
         }
         getInfo()
     }, [dispatch])
@@ -36,6 +39,7 @@ import TraitSection from "../components/TraitSection";
         </div>
         <AboutSection/>
         <TraitSection/>
+        <Traits/>
     </div>
   )
 }

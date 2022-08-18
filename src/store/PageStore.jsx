@@ -3,7 +3,8 @@ const defaultState = {
     aboutNft: [],
     aboutContent: [],
     traitContent: [],
-    traitEval: []
+    traitEval: [],
+    traits: []
 }
 const pageReducer = (state=defaultState, action) => {
     if(action.type === "SET_HERO_SECTION"){
@@ -20,6 +21,9 @@ const pageReducer = (state=defaultState, action) => {
         return newState;
     } else if(action.type === "SET_TRAITEVAL_SECTION"){
         let newState = {...state, traitEval:action.payload}
+        return newState;
+    } else if(action.type === "SET_TRAITS"){
+        let newState = {...state, traits:action.payload}
         return newState;
     } 
     return state

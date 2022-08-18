@@ -59,7 +59,7 @@ code {
 }
 .trait_section {
   @apply w-full md:h-fit h-screen flex pl-10 xl:px-0 
-}
+} 
 .contentmax_width{
   @apply lg:max-w-6xl mx-auto w-full
 }
