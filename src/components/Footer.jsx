@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux"
+import { Link } from "react-router-dom"
 
 const Footer = () => {
     const socialMedia = useSelector(state=>state.socialMedia)
@@ -8,10 +9,10 @@ const Footer = () => {
             <div className="flex justify-between w-full text-white">
                 <h3 className="title text-4xl">Join the community</h3>
                 <ul className="flex gap-4">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Roadmap</a></li>
-                    <li><a href="#">Community</a></li>
-                    <li><a href="#">Connect Wallet</a></li>
+                    <li><Link to='/'>About</Link></li>
+                    <li><Link to='/'>Roadmap</Link></li>
+                    <li><Link to='/'>Community</Link></li>
+                    <li><Link to='/'>Connect Wallet</Link></li>
                 </ul>
             </div>
             <div className="flex justify-between w-full items-center">
