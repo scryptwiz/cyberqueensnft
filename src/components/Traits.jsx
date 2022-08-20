@@ -2,7 +2,6 @@ import { useSelector } from "react-redux"
 
 const Traits = () => {
     const traits = useSelector(state=>state.traits)
-    console.log(traits)
   return (
     <div className="bg-black each_section py-10">
         <div className="contentmax_width flex justify-between my-auto items-center bg-white/10 rounded-lg p-10">
@@ -23,7 +22,7 @@ const Traits = () => {
                     <div className="w-7/12 flex flex-wrap">
                         {traits.map((item,index)=>{
                             return(
-                                <div className="w-1/2 p-2">
+                                <div key={index} className="w-1/2 p-2">
                                     <div className="w-full py-3 px-4 bg-white/10 flex rounded-lg gap-3">
                                         <div className="rounded-full w-10 h-10 bg-gray-500">{item.fields.image&&(<img src={item.fields.image.fields.file.url} alt={item.fields.image.fields.title} className='w-full object-cover'/>)}</div>
                                         <div className="flex flex-col">
