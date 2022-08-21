@@ -13,8 +13,8 @@ const Team = () => {
                             <div className="rounded-full w-20 h-20 bg-gray-500">
                                 {item.fields.image&&(<img className="w-full h-fit rounded-full object-cover" src={item.fields.image.fields.file.url} alt={item.fields.fields.title}/>)}
                             </div>
-                            <h4 className="tracking-wider title text-lg">{item.fields.name}</h4>
-                            <p className="tracking-wider">{item.fields.title}</p>
+                            <h4 className="tracking-wider title text-xl mt-2">{item.fields.name}</h4>
+                            <p className="tracking-wider text-center w-9/12 text-sm">{item.fields.title}</p>
                         </div>
                     )
                 })}

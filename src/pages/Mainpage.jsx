@@ -1,5 +1,5 @@
 import { createClient } from "contentful";
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { useDispatch } from "react-redux";
 import AboutSection from "../components/AboutSection";
 import Footer from "../components/Footer";
@@ -13,8 +13,10 @@ import Traits from "../components/Traits";
 import TraitSection from "../components/TraitSection";
 
  const Mainpage = () => {
+    const [loader, setLoader] = useState(true)
     const dispatch = useDispatch()
     useEffect(() => {
+        setLoader(true)
         const getInfo = async () => {
             const client = createClient({
                 space: process.env.REACT_APP_CONTENTFUL_SPACE_ID,
@@ -42,12 +44,19 @@ import TraitSection from "../components/TraitSection";
               dispatch({type: "SET_NEWS", payload:news.items})
               dispatch({type: "SET_SOCIALS", payload:socialMedia.items})
               dispatch({type: "SET_NEWSFIELD", payload:newsField.items})
+              setLoader(false)
         }
         getInfo()
     }, [dispatch])
     
   return (
     <div>
+      {loader&&(
+          <div className='w-full h-screen fixed top-0 left-0 bg-black flex items-center justify-center z-[100] flex-col'>
+            <img src="/assets/logo/icon.png" alt="Cyber Icon" className="animate-bounce w-10"  />
+            <img src="/assets/logo/Text.png" alt="Cyber Queen" className="animate-pulse h-10 mt-3" />
+          </div>
+        )}
         <div className="bg-black hero_bg each_section flex-col">
             <Navbar/>
             <HeroSection/>

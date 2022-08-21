@@ -12,7 +12,7 @@ const Traits = () => {
                     </div>
 
                     <div className="w-7/12">
-                        <p className="text-xs text-widest p-4">Building a thriving community that gives back through supporting girls and empowering women to make a positive impact in the society.</p>
+                        <p className="text-xs text-widest p-4">The Queens are made up of over 300 hand drawn traits which gives every Queen her unique charm.</p>
                     </div>
                 </div>
                 <div className="flex">
