@@ -19,7 +19,7 @@ const Footer = () => {
                 <div className="w-1/2 flex gap-4">
                     {socialMedia.map((item,index)=>{
                         return (
-                            <img src={item.fields.image.fields.file.url} className='w-5 h-5' alt={item.fields.image.fields.title} />
+                            <img key={index} src={item.fields.image.fields.file.url} className='w-5 h-5' alt={item.fields.image.fields.title} />
                         )
                     })}
                 </div>

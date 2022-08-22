@@ -2,7 +2,6 @@ import { useSelector } from "react-redux";
 import Slider from "react-slick";
 const News = () => {
     const news = useSelector(state=>state.newsField)
-    console.log(news)
     const settings = {
         dots: false,
         arrows:false,
@@ -34,7 +33,7 @@ const News = () => {
             <Slider {...settings}className="w-full lg:max-w-6xl mx-auto text-white">
                 {news.map((items,index)=>{
                     return(
-                        <div className="w-1/3p-5">
+                        <div key={index} className="w-1/3p-5">
                             <div className="bg-white/20 p-7 w-72">
                                 <div className="w-full h-32 bg-gray-500"></div>
                                 <h1 className="text-2xl text-white title mt-5">{items.fields.title}</h1>

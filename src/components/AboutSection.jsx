@@ -1,9 +1,21 @@
 import { useSelector } from "react-redux"
 import { AiOutlineArrowRight } from 'react-icons/ai';
+import Slider from "react-slick";
 
 const AboutSection = () => {
   const aboutNft = useSelector(state=>state.aboutNft)
   const aboutContent = useSelector(state=>state.aboutContent)
+  const settings = {
+    arrows: false,
+    dots: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplaySpeed: 0,
+    speed: 700,
+    autoplay: true,
+    fade: true,
+  };
   return (
     <div className="bg-black each_section py-16">
         <div className="contentmax_width flex justify-between my-auto items-center">
@@ -13,7 +25,15 @@ const AboutSection = () => {
                   <div key={index} className="w-1/2 p-2">
                     <div className="rounded bg-fadedBlack/50 p-4">
                       <div className="w-full rounded">
-                        <img src={items.fields.nftImage.fields.file.url} className="object-cover w-full h-32 lg:h-48" alt={items.fields.nftImage.fields.title} />
+                      <Slider className="w-full mx-auto" {...settings}>
+                          {items.fields.nftImages.map((item,index)=>{
+                              return (
+                                  <div key={index} className="bg-green-500">
+                                      <img src={item.fields.file.url} alt={item.fields.title} className='w-full'/>
+                                  </div>
+                              )
+                          })}
+                        </Slider>
                         <div className="flex items-center mt-4">
                           <div className="w-10/12">
                             <h1 className="text-lg text-white title tracking-wide">{items.fields.title}</h1>

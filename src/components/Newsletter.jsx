@@ -6,7 +6,7 @@ const Newsletter = () => {
     <div className="bg-lightBlack each_section">
         {news.map((item,index)=>{
             return (
-                <div className="contentmax_width flex py-0 justify-between my-auto items-center gap-4">
+                <div key={index} className="contentmax_width flex py-0 justify-between my-auto items-center gap-4">
                     <div className="w-1/2 text-white gap-5 flex flex-col">
                         <h1 className="title text-4xl">{item.fields.title}</h1>
                         <p className="text-sm tracking-widest">{item.fields.content}</p>
