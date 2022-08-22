@@ -9,16 +9,6 @@ const TraitSection = () => {
                 return (
                     <div key={index} className="contentmax_width flex justify-between my-auto items-center">
                         <div className="w-1/2 flex flex-col gap-4">
-                            <div className="flex gap-7">
-                                {traitEval.map((item,index)=>{
-                                    return(
-                                        <div key={index} className="flex-col">
-                                            <h2 className="title text-white text-xl">{item.fields.values}</h2>
-                                            <h2 className="text-white mono tracking-wide lg:text-sm text-[0.6rem]">{item.fields.content}</h2>
-                                        </div>
-                                    )
-                                })}
-                            </div>
                             <h1 className="text-4xl text-white title tracking-wide lg:text-5xl">{items.fields.title}</h1>
                             <p className="text-xs lg:texxt-sm mono tracking-wide text-white font-light py-1">{items.fields.content}</p>
                         </div>
