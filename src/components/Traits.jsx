@@ -12,7 +12,7 @@ const Traits = () => {
                     </div>
 
                     <div className="w-7/12">
-                        <p className="text-xs text-widest p-4">The Queens are made up of over 300 hand drawn traits which gives every Queen her unique charm.</p>
+                        <p className="text-xs text-widest p-4">Cyber Queens are made up of over 300 hand drawn traits which gives every Queen her own unique charm.</p>
                     </div>
                 </div>
                 <div className="flex">
