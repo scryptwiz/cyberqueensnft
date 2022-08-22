@@ -2,7 +2,6 @@ import { useSelector } from "react-redux"
 
 const TraitSection = () => {
     const traitContent  = useSelector(state=>state.traitContent)
-    const traitEval  = useSelector(state=>state.traitEval)
   return (
     <div className="bg-black trait_section py-10 pr-0">
             {traitContent.map((items,index)=>{
