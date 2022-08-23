@@ -57,7 +57,7 @@ import TraitSection from "../components/TraitSection";
             <img src="/assets/logo/Text.png" alt="Cyber Queen" className="animate-pulse h-10 mt-3" />
           </div>
         )}
-        <div className="bg-black hero_bg each_section flex-col">
+        <div className="bg-black hero_bg each_section flex-col sm:gap-0 gap-10">
             <Navbar/>
             <HeroSection/>
         </div>

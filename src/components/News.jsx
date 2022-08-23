@@ -15,7 +15,7 @@ const News = () => {
             {
               breakpoint: 768,
               settings: {
-                slidesToShow: 1
+                slidesToShow: 2
               }
             },
             {
@@ -27,14 +27,14 @@ const News = () => {
           ]
       };
   return (
-    <div className="bg-black each_section py-16">
-        <div className="contentmax_width flex flex-col justify-between my-auto items-center gap-4">
+    <div className="bg-black each_section2 py-10 md:py-16">
+        <div className="contentmax_width flex flex-col justify-between my-auto items-center gap-10 md:gap-4">
             <h1 className="text-white title text-4xl w-full">News and Updates</h1>
             <Slider {...settings}className="w-full lg:max-w-6xl mx-auto text-white">
                 {news.map((items,index)=>{
                     return(
-                        <div key={index} className="w-1/3p-5">
-                            <div className="bg-white/20 p-7 w-72">
+                        <div key={index} className="w-1/3 p-5">
+                            <div className="bg-white/20 p-7 w-60 sm:w-72">
                                 <div className="w-full h-32 bg-gray-500"></div>
                                 <h1 className="text-2xl text-white title mt-5">{items.fields.title}</h1>
                                 <p className="text-gray-400 text-xs">{items.fields.date}</p>

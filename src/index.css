@@ -55,10 +55,16 @@ code {
   font-family: 'DM Mono', monospace;
 }
 .each_section {
-  @apply w-full md:h-fit h-screen flex px-10 xl:px-0 
+  @apply w-full md:h-fit h-fit flex px-5 md:px-10 xl:px-0 
+}
+.each_section2 {
+  @apply w-full h-fit flex px-5 md:px-10 xl:px-0 
+}
+.each_section3 {
+  @apply w-full h-fit flex md:px-10 xl:px-0 
 }
 .trait_section {
-  @apply w-full md:h-fit h-screen flex pl-10 xl:px-0 
+  @apply w-full md:h-fit h-fit flex md:pl-10 pl-5 xl:px-0 
 } 
 .contentmax_width{
   @apply lg:max-w-6xl mx-auto w-full

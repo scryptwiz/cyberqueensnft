@@ -7,7 +7,8 @@ module.exports = {
         cyberPurple: "#6822B8",
         cyberPink: "#CB47B8",
         fadedBlack: "#1F1F1F",
-        lightBlack: "#0B0B0B"
+        lightBlack: "#0B0B0B",
+        cyberGray: "#9E9E9E"
       }
     },
   },
