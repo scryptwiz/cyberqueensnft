@@ -13,7 +13,7 @@ const HeroSection = () => {
                         <button className="connect_wallet">Connect Wallet</button>
                     </div>
                     <div className="md:w-1/2 w-full lg:block">
-                        <img src={items.fields.image.fields.file.url} className='w-full h-fit object-cover' alt={items.fields.image.fields.title} />
+                        <img src={items.fields.image.fields.file.url} className='w-full object-cover' alt={items.fields.image.fields.title} />
                     </div>
                 </div>
             )
