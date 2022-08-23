@@ -46,7 +46,7 @@ code {
   background-image: url('/public/assets/images/gradients.png');
   background-position: center;
   background-size: cover;
-  object-position: center;
+  object-position: cover;
 }
 .title {
   font-family: 'DM Serif Display', serif;

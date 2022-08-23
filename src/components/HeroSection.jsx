@@ -12,8 +12,8 @@ const HeroSection = () => {
                         <h1 className="text-sm text-white font-light tracking-wider md:w-2/3 w-full">{items.fields.content}</h1>
                         <button className="connect_wallet">Connect Wallet</button>
                     </div>
-                    <div className="md:w-1/2 lg:block">
-                        <img src={items.fields.image.fields.file.url} className='w-full h-fit object-contain' alt={items.fields.image.fields.title} />
+                    <div className="md:w-1/2 w-full lg:block">
+                        <img src={items.fields.image.fields.file.url} className='w-full h-fit object-cover' alt={items.fields.image.fields.title} />
                     </div>
                 </div>
             )
