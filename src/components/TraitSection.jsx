@@ -12,7 +12,7 @@ const TraitSection = () => {
                             <p className="text-xs lg:texxt-sm mono tracking-wide text-white font-light py-1">{items.fields.content}</p>
                         </div>
                         <div className="w-full md:w-1/2 relative">
-                            <img src={items.fields.image.fields.file.url} alt={items.fields.image.fields.title} className='lg:h-auto h-fit md:h-80 pickgradient' />
+                            <img src={items.fields.image.fields.file.url} alt={items.fields.image.fields.title} className='lg:h-auto h-72 md:h-80 pickgradient' />
                         </div>
                     </div>
                 )
