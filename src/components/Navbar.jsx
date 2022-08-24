@@ -40,14 +40,14 @@ const Navbar = () => {
                         <img src="/assets/logo/logoGroup.png" className="h-7" alt="" />
                     </Link>
                     <ul className="flex flex-col gap-10 text-white text-sm">
-                        <li><a href="#aboutus">About</a></li>
-                        <li><a href="#roadmap">Roadmap</a></li>
-                        <li><a href="#community">Community</a></li>
+                        <li><a href="#aboutus" onClick={()=>setToggle(false)}>About</a></li>
+                        <li><a href="#roadmap" onClick={()=>setToggle(false)}>Roadmap</a></li>
+                        <li><a href="#community" onClick={()=>setToggle(false)}>Community</a></li>
                         <li><Link to="/">Connect Wallet</Link></li>
                     </ul>
                 </div>
                 <div className="w-2/12 h-full pt-5" onClick={()=>setToggle(false)}> 
-                    <RiCloseFill className="text-white  text-2xl mx-auto"/>
+                    <RiCloseFill className="text-white  text-2xl mx-auto" onClick={()=>setToggle(false)}/>
                 </div>
             </div>)}
         </div>
