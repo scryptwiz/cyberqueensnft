@@ -73,7 +73,7 @@ const AboutSection = () => {
                         <Slider className="w-full mx-auto" {...settings}>
                             {items.fields.nftImages.map((item,index)=>{
                                 return (
-                                    <div key={index} className="bg-green-500">
+                                    <div key={index}>
                                         <img src={item.fields.file.url} alt={item.fields.title} className='w-full'/>
                                     </div>
                                 )
