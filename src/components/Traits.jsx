@@ -24,7 +24,7 @@ const Traits = () => {
                             return(
                                 <div key={index} className="w-1/2 p-1 sm:p-2">
                                     <div className="w-full py-2 px-2 sm:py-3 sm:px-4 bg-white/10 flex rounded-lg gap-2 sm:gap-3">
-                                        <div className="rounded-full w-7 h-7 sm:w-10 sm:h-10 bg-gray-500">{item.fields.image&&(<img src={item.fields.image.fields.file.url} alt={item.fields.image.fields.title} className='w-full object-cover'/>)}</div>
+                                        <div className="rounded-full w-7 h-7 sm:w-10 sm:h-10 bg-gray-500">{item.fields.image&&(<img src={item.fields.image.fields.file.url} alt={item.fields.image.fields.title} className='w-full h-full rounded-full object-cover'/>)}</div>
                                         <div className="flex flex-col">
                                             <h4 className="title text-gray-400 sm:text-sm text-xs">{item.fields.value}</h4>
                                             <h4 className="title text-white sm:text-xl text-sm break-all">{item.fields.trait}</h4>
