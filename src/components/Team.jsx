@@ -11,7 +11,7 @@ const Team = () => {
                     return(
                         <div key={index} className="flex flex-col w-1/2 md:w-1/4 p-2 text-white items-center">
                             <div className="rounded-full w-20 h-20 bg-gray-500">
-                                {item.fields.image&&(<img className="w-full h-fit rounded-full object-cover" src={item.fields.image.fields.file.url} alt={item.fields.fields.title}/>)}
+                                {item.fields.image&&(<img className="w-full h-fit rounded-full object-cover" src={item.fields.image.fields.file.url} alt={item?.fields?.title}/>)}
                             </div>
                             <h4 className="tracking-wider title text-xl mt-2">{item.fields.name}</h4>
                             <p className="tracking-wider text-center w-full text-cyberGray md:w-9/12 text-xs md:text-sm">{item.fields.title}</p>
